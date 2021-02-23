@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0b3 (Python 3.9.2 on win32)" generated="20210223 17:28:12.468" rpa="false">
+<suite id="s1" name="Registration" source="C:\Users\karim\PycharmProjects\AutoWeb\TCs\registration.robot">
+<test id="s1-t1" name="Sign up">
+<kw name="registration">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210223 17:28:12.977" level="INFO">Opening browser 'chrome' to base url 'https://www.roblox.com/'.</msg>
+<status status="PASS" starttime="20210223 17:28:12.977" endtime="20210223 17:28:21.091"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210223 17:28:26.098" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210223 17:28:21.091" endtime="20210223 17:28:26.098"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:CookieLawAccept</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210223 17:28:26.098" level="INFO">Clicking element 'id:CookieLawAccept'.</msg>
+<status status="PASS" starttime="20210223 17:28:26.098" endtime="20210223 17:28:26.220"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>birthdayMonth</arg>
+<arg>November</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<msg timestamp="20210223 17:28:26.220" level="INFO">Selecting options from selection list 'birthdayMonth' by label November.</msg>
+<status status="PASS" starttime="20210223 17:28:26.220" endtime="20210223 17:28:26.346"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>birthdayDay</arg>
+<arg>21</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210223 17:28:26.351" level="INFO">Selecting options from selection list 'birthdayDay' by value 21.</msg>
+<status status="PASS" starttime="20210223 17:28:26.351" endtime="20210223 17:28:26.480"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>birthdayYear</arg>
+<arg>1996</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<msg timestamp="20210223 17:28:26.480" level="INFO">Selecting options from selection list 'birthdayYear' by value 1996.</msg>
+<status status="PASS" starttime="20210223 17:28:26.480" endtime="20210223 17:28:26.566"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:signup-username</arg>
+<arg>mynameisused554242</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210223 17:28:26.566" level="INFO">Typing text 'mynameisused554242' into text field 'id:signup-username'.</msg>
+<status status="PASS" starttime="20210223 17:28:26.566" endtime="20210223 17:28:26.730"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:signup-password</arg>
+<arg>mypasswordis22</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210223 17:28:26.730" level="INFO">Typing text 'mypasswordis22' into text field 'id:signup-password'.</msg>
+<status status="PASS" starttime="20210223 17:28:26.730" endtime="20210223 17:28:26.966"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210223 17:28:28.971" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210223 17:28:26.966" endtime="20210223 17:28:28.971"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:MaleButton</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210223 17:28:28.971" level="INFO">Clicking element 'id:MaleButton'.</msg>
+<status status="PASS" starttime="20210223 17:28:28.971" endtime="20210223 17:28:29.046"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210223 17:28:31.051" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20210223 17:28:29.046" endtime="20210223 17:28:31.051"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>id:signup-button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20210223 17:28:31.051" level="INFO">Clicking element 'id:signup-button'.</msg>
+<status status="PASS" starttime="20210223 17:28:31.051" endtime="20210223 17:28:31.121"/>
+</kw>
+<status status="PASS" starttime="20210223 17:28:12.977" endtime="20210223 17:28:31.121"/>
+</kw>
+<status status="PASS" starttime="20210223 17:28:12.977" endtime="20210223 17:28:31.121"/>
+</test>
+<status status="PASS" starttime="20210223 17:28:12.471" endtime="20210223 17:28:31.121"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Registration">Registration</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
